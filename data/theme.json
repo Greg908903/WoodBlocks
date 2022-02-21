@@ -1,0 +1,15 @@
+{
+  "defaults": {
+    "colours": {
+      "normal_bg": "#1ECC18,#1ECC18,90",
+      "normal_text": "#FFFFFF"
+    }
+  },
+  "button": {
+    "font": {
+      "name": "montserrat",
+       "size": "24",
+      "regular_path": "data\\comic-sans-ms.ttf"
+    }
+  }
+}

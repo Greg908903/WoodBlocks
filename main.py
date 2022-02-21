@@ -9,7 +9,7 @@ pygame.init()
 size = WIDTH, HEIGHT = 835, 1059
 screen = pygame.display.set_mode(size)
 clock = pygame.time.Clock()
-manager = pygame_gui.UIManager((WIDTH, HEIGHT))
+manager = pygame_gui.UIManager((WIDTH, HEIGHT), 'data\\theme.json')
 
 
 def terminate():
@@ -38,9 +38,10 @@ def start_screen():
 
     fon = pygame.transform.scale(load_image('fon.png'), (WIDTH, HEIGHT))
     screen.blit(fon, (0, 0))
-    hello_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((350, 275), (100, 50)),
-                                                text='Say Hello',
+    hello_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((342, 300), (150, 75)),
+                                                text='Начать игру',
                                                 manager=manager)
+
     while True:
         time_delta = clock.tick(60) / 1000.0
         for event in pygame.event.get():
